@@ -20,7 +20,7 @@ public class PalindromeTest {
     public void teardown() {
         palindrome = null;
     }
-
+    //check number is palindrome or not a palindrome
 
     @Test
     public void givenIntegerShouldReturnNotAPalindrome() {

@@ -2,6 +2,7 @@ package com.stackroute.Pe2;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import static org.junit.Assert.*;
 
@@ -19,6 +20,9 @@ public class CheckPowerOfTest {
         checkpowerOf = null;
     }
 
+    //This test case check whether the given input is power of 4 or not
+
+    @Test
     public void chechpowerof(){
         //act
         String Result=checkpowerOf.CheckPower(16);
