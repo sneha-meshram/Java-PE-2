@@ -1,4 +1,4 @@
-##Added Test cases for these programs
+Added Test cases for these programs
 ------------------------------------------------------------------------------------------------------------------------
 1. Write a Java method to Reverse the given input & Check if it is a Palindrome.
 ------------------------------------------------------------------------------------------------------------------------
