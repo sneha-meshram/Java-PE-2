@@ -23,18 +23,25 @@ public class MemberInformationTest {
     //check the member information is correct or not
 
     @Test
-    public void memberinformation(){
+    public void givenInputshouldReturnName() {
         //act
-        String Result=memberInformation.membersName("Harry Potter");
+        String ResultNAme = memberInformation.membersName("Harry Potter");
         //assert
-        assertEquals("Harry Potter", Result);
-        //act
-         int Result1 = memberInformation.membersAge(30);
+        assertEquals("Harry Potter", ResultName);
+    }
+      @Test
+         public void givenInputShouldReturnAge() {
+          //act
+          int ResultAge = memberInformation.membersAge(30);
+          //assert
+          assertEquals(30, ResultAge);
+      }
+        @Test
+        public void givenInputShouldReturnSalary(){
+       //act
+        float ResultSalary = memberInformation.membersSalary(2500.3);
         //assert
-        assertEquals(30, Result1);
-        int Result2 = memberInformation.membersSalary(2500.3);
-        //assert
-        assertEquals(2500.3,Result2,0);
+        assertEquals(2500.3,ResultSalary,0);
     }
 
 }
