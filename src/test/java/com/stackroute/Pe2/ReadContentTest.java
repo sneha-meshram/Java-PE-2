@@ -27,7 +27,7 @@ public class ReadContentTest {
     @Test
     public void textFileReadandConvertIntoUpperCase(){
         //act
-        String Result= readContent.textFileReadandConvertintoUpperCase("this is java test cases");
+        String Result= readContent.textFileReadAndConvertIntoUpperCase("this is java test cases");
         //assert
         assertEquals("THIS IS JAVA TEST CASES", Result);
     }

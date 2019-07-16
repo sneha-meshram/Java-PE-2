@@ -27,11 +27,11 @@ public class CheckPowerOfTest {
         //act
         int result=checkpowerOf.CheckPower(16);
         //assert
-        assert("its a power of 4", result);
+        assertEquals("its a power of 4", result);
         //act
          result =checkpowerOf.CheckPower(15);
         //assert
-        assert("its not a power of 4", result);
+        assertEquals("its not a power of 4", result);
     }
 
      @Test
@@ -39,7 +39,7 @@ public class CheckPowerOfTest {
         //act
          int result=checkpowerOf.CheckPower(-16);
          //assert
-         assert("error", result);
+         assertEquals("error",result);
      }
 
 }

@@ -25,17 +25,24 @@ public class PalindromeTest {
     @Test
     public void givenIntegerShouldReturnNotAPalindrome() {
         //act
-        String actualResult = palindrome.checkpalindrome(45634);
+        String actualResult = palindrome.checkPalindrome(45634);
         //assert
         assertEquals("Not a palindrome", actualResult);
     }
 
     @Test
-    public void shouldRecognizePalindrome() {
+    public void givenInputshouldRecognizePalindrome() {
         //act
-        String actualResult = palindrome.checkpalindrome("aba");
+        String actualResult = palindrome.checkPalindrome("aba");
         //assert
         assertEquals("Is a palindrome", actualResult);
     }
 
+    @Test
+    public void givenNullShouldRecognizeNullValue(){
+        //act
+        String actualResult= palindrome.checkPalindrome(null);
+        //assert
+        assertNotNull("null value not allowed",actualResult);
+    }
 }
