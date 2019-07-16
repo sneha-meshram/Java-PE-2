@@ -1,6 +1,6 @@
 ##Added Test cases for these programs
-
-1.Write a Java method to Reverse the given input & Check if it is a Palindrome.
+------------------------------------------------------------------------------------------------------------------------
+1. Write a Java method to Reverse the given input & Check if it is a Palindrome.
 ------------------------------------------------------------------------------------------------------------------------
 2. Write a Java method to check if a given number is power of 4
 ------------------------------------------------------------------------------------------------------------------------
