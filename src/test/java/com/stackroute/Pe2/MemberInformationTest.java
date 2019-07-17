@@ -10,38 +10,41 @@ public class MemberInformationTest {
 
     MemberInformation memberInformation;
 
+
     @Before
-    public void setup() {
-        this.memberInformation = new MemberInformation();
+    public void setUp() throws Exception {
+        memberInformation = new MemberInformation();
     }
 
     @After
-    public void teardown() {
+    public void tearDown() throws Exception {
         memberInformation = null;
     }
 
-    //check the member information is correct or not
-
+    /**
+     * Test to check if Member name is returned.
+     */
     @Test
-    public void givenInputshouldReturnName() {
-        //act
-        String ResultNAme = memberInformation.membersName("Harry Potter");
-        //assert
-        assertEquals("Harry Potter", ResultName);
-    }
-      @Test
-         public void givenInputShouldReturnAge() {
-          //act
-          int ResultAge = memberInformation.membersAge(30);
-          //assert
-          assertEquals(30, ResultAge);
-      }
-        @Test
-        public void givenInputShouldReturnSalary(){
-       //act
-        float ResultSalary = memberInformation.membersSalary(2500.3);
-        //assert
-        assertEquals(2500.3,ResultSalary,0);
+    public void givenMemberDetailsShouldDisplayMemberName() {
+        memberInformation.memberNameCreate("Harry Potter", 30, 2500.3);
+        assertEquals("Harry Potter", memberInformation.getMemberName());
     }
 
+    /**
+     * Method should return Age of the member
+     */
+    @Test
+    public void givenMemberDetailsShouldReturnMemberAge() {
+        memberInformation.memberNameCreate("Harry Potter", 30, 2500.3);
+        assertEquals(30, memberInformation.getMemberAge());
+    }
+
+    /**
+     * Method should return Salary of the member
+     */
+    @Test
+    public void givenMemberDetailsShouldReturnMemberSalary() {
+        memberInformation.memberNameCreate("Harry Potter", 30, 2500.3);
+        assertEquals(2500.3, memberInformation.getMemberSalary(), 0.0);
+    }
 }
