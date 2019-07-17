@@ -33,7 +33,7 @@ public class PalindromeTest {
     @Test
     public void givenInputshouldRecognizePalindrome() {
         //act
-        String actualResult = palindrome.checkPalindrome("aba");
+        String actualResult = palindrome.checkPalindrome(121);
         //assert
         assertEquals("Is a palindrome", actualResult);
     }
@@ -41,7 +41,7 @@ public class PalindromeTest {
     @Test
     public void givenNullShouldRecognizeNullValue(){
         //act
-        String actualResult= palindrome.checkPalindrome(null);
+        String actualResult= palindrome.checkPalindrome(0);
         //assert
         assertNotNull("null value not allowed",actualResult);
     }

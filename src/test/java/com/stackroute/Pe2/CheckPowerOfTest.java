@@ -23,13 +23,16 @@ public class CheckPowerOfTest {
     //This test case check whether the given input is power of 4 or not
 
     @Test
-    public void givenInputIsPowerOf(){
+    public void givenInputIsPowerOf() {
         //act
-        int result=checkpowerOf.CheckPower(16);
+        String result = checkpowerOf.CheckPower(16);
         //assert
         assertEquals("its a power of 4", result);
+    }
+        @Test
+        public void givenInputIsNotPowerOf(){
         //act
-         result =checkpowerOf.CheckPower(15);
+         String result =checkpowerOf.CheckPower(15);
         //assert
         assertEquals("its not a power of 4", result);
     }
@@ -37,7 +40,7 @@ public class CheckPowerOfTest {
      @Test
     public void givenNegativeNumberShouldReturnErrorMessage(){
         //act
-         int result=checkpowerOf.CheckPower(-16);
+         String result=checkpowerOf.CheckPower(-16);
          //assert
          assertEquals("error",result);
      }

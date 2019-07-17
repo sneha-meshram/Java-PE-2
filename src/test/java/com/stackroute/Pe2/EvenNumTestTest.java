@@ -3,7 +3,7 @@ package com.stackroute.Pe2;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.Result;
+
 
 import static org.junit.Assert.*;
 
@@ -23,15 +23,21 @@ public class EvenNumTestTest {
     //check input is even or not
     @Test
     public void EvenNumTest() {
-        assertEquals(true, 6);
-        assertEquals(false,7);
+        String result = evennumtest.checkInput(6);
+        assertEquals("Even Number", result);
     }
-    //check null value exception
     @Test
-    public void nullValueShouldReturnErrorMessage(){
-        String result=evennumtest.checkInput(null);
-        assertEquals("null value not allowed", result);
+    public void EvenNumNotTest() {
+        String result = evennumtest.checkInput(7);
+        assertEquals("Odd Number", result);
     }
+
+    //check null value exception
+   /* @Test
+    public void nullValueShouldReturnErrorMessage(){
+        String result=evennumtest.checkInput(0);
+        assertEquals("null value not allowed", result);
+    }*/
     //check given input is negative
 
     @Test
@@ -43,6 +49,6 @@ public class EvenNumTestTest {
     @Test
     public void givenValueZeroReturnMessage() {
         String result = evennumtest.checkInput(0);
-        assertEquals("0 is not allowed", result);
+        assertEquals("Zero value not allowed", result);
     }
 }
